@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio Version 17
+
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JuceWebviewSimple - Standalone Plugin", "JuceWebviewSimple_StandalonePlugin.vcxproj", "{9E4F8202-C894-5A88-7EA2-02CFB5F00151}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2BF08CF5-5D4B-853B-986E-AF389CE3F85B} = {2BF08CF5-5D4B-853B-986E-AF389CE3F85B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JuceWebviewSimple - VST3", "JuceWebviewSimple_VST3.vcxproj", "{7D531E54-BDD5-FEFB-4729-CB36832B5BE5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2BF08CF5-5D4B-853B-986E-AF389CE3F85B} = {2BF08CF5-5D4B-853B-986E-AF389CE3F85B}
+		{05ED8548-AE9F-6747-14CA-0EA70D1DA08B} = {05ED8548-AE9F-6747-14CA-0EA70D1DA08B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JuceWebviewSimple - Shared Code", "JuceWebviewSimple_SharedCode.vcxproj", "{2BF08CF5-5D4B-853B-986E-AF389CE3F85B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JuceWebviewSimple - VST3 Manifest Helper", "JuceWebviewSimple_VST3ManifestHelper.vcxproj", "{05ED8548-AE9F-6747-14CA-0EA70D1DA08B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D531E54-BDD5-FEFB-4729-CB36832B5BE5}.Debug|x64.ActiveCfg = Debug|x64
+		{7D531E54-BDD5-FEFB-4729-CB36832B5BE5}.Debug|x64.Build.0 = Debug|x64
+		{7D531E54-BDD5-FEFB-4729-CB36832B5BE5}.Release|x64.ActiveCfg = Release|x64
+		{7D531E54-BDD5-FEFB-4729-CB36832B5BE5}.Release|x64.Build.0 = Release|x64
+		{9E4F8202-C894-5A88-7EA2-02CFB5F00151}.Debug|x64.ActiveCfg = Debug|x64
+		{9E4F8202-C894-5A88-7EA2-02CFB5F00151}.Debug|x64.Build.0 = Debug|x64
+		{9E4F8202-C894-5A88-7EA2-02CFB5F00151}.Release|x64.ActiveCfg = Release|x64
+		{9E4F8202-C894-5A88-7EA2-02CFB5F00151}.Release|x64.Build.0 = Release|x64
+		{2BF08CF5-5D4B-853B-986E-AF389CE3F85B}.Debug|x64.ActiveCfg = Debug|x64
+		{2BF08CF5-5D4B-853B-986E-AF389CE3F85B}.Debug|x64.Build.0 = Debug|x64
+		{2BF08CF5-5D4B-853B-986E-AF389CE3F85B}.Release|x64.ActiveCfg = Release|x64
+		{2BF08CF5-5D4B-853B-986E-AF389CE3F85B}.Release|x64.Build.0 = Release|x64
+		{05ED8548-AE9F-6747-14CA-0EA70D1DA08B}.Debug|x64.ActiveCfg = Debug|x64
+		{05ED8548-AE9F-6747-14CA-0EA70D1DA08B}.Debug|x64.Build.0 = Debug|x64
+		{05ED8548-AE9F-6747-14CA-0EA70D1DA08B}.Release|x64.ActiveCfg = Release|x64
+		{05ED8548-AE9F-6747-14CA-0EA70D1DA08B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
