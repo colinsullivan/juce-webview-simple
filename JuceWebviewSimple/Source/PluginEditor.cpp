@@ -10,9 +10,14 @@
 #include "PluginEditor.h"
 
 //==============================================================================
-JuceWebviewSimpleAudioProcessorEditor::JuceWebviewSimpleAudioProcessorEditor (JuceWebviewSimpleAudioProcessor& p)
-    : AudioProcessorEditor (&p), audioProcessor (p)
+JuceWebviewSimpleAudioProcessorEditor::JuceWebviewSimpleAudioProcessorEditor (JuceWebviewSimpleAudioProcessor& p, const juce::WebBrowserComponent::Options& options)
+    : AudioProcessorEditor (&p), audioProcessor (p), mWebComponent(options)
 {
+    
+    addAndMakeVisible(mWebComponent);
+    
+    mWebComponent.goToURL("https://google.com");
+    
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
     setSize (400, 300);
@@ -37,4 +42,5 @@ void JuceWebviewSimpleAudioProcessorEditor::resized()
 {
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
+    mWebComponent.setSize(getWidth(), getHeight());
 }

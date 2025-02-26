@@ -166,7 +166,9 @@ bool JuceWebviewSimpleAudioProcessor::hasEditor() const
 
 juce::AudioProcessorEditor* JuceWebviewSimpleAudioProcessor::createEditor()
 {
-    return new JuceWebviewSimpleAudioProcessorEditor (*this);
+    juce::WebBrowserComponent::Options options;
+
+    return new JuceWebviewSimpleAudioProcessorEditor (*this, options);
 }
 
 //==============================================================================
