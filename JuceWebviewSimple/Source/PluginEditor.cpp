@@ -16,11 +16,11 @@ JuceWebviewSimpleAudioProcessorEditor::JuceWebviewSimpleAudioProcessorEditor (Ju
     
     addAndMakeVisible(mWebComponent);
     
-    mWebComponent.goToURL("https://google.com");
+    mWebComponent.goToURL("https://w3c.github.io/uievents/tools/key-event-viewer.html");
     
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
-    setSize (400, 300);
+    setSize (800, 600);
 }
 
 JuceWebviewSimpleAudioProcessorEditor::~JuceWebviewSimpleAudioProcessorEditor()
