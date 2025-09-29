@@ -4,6 +4,8 @@
               useAppConfig="0" addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
   <MAINGROUP id="CjiaZ6" name="JuceWebviewSimple">
     <GROUP id="{EC1F9354-F10C-C5D2-34FB-D8CB33218617}" name="Source">
+      <FILE id="E9Cc76" name="document-mouseout-example.html" compile="0"
+            resource="0" file="Source/document-mouseout-example.html" xcodeResource="1"/>
       <FILE id="USe0ZZ" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="lB81D6" name="PluginProcessor.h" compile="0" resource="0"
