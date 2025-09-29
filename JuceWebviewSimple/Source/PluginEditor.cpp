@@ -15,8 +15,11 @@ JuceWebviewSimpleAudioProcessorEditor::JuceWebviewSimpleAudioProcessorEditor (Ju
 {
     
     addAndMakeVisible(mWebComponent);
-    
-    mWebComponent.goToURL("file:///Users/colin/projects/juce-webview-simple/document-mouseout-example.html");
+
+    // Get the HTML file from the plugin's Resources directory
+    auto pluginFile = juce::File::getSpecialLocation(juce::File::currentApplicationFile);
+    auto htmlFile = pluginFile.getChildFile("Contents").getChildFile("Resources").getChildFile("document-mouseout-example.html");
+    mWebComponent.goToURL(juce::URL(htmlFile).toString(false));
     
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
