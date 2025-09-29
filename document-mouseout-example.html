@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mouseout Event Example</title>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function() {
+                var box = document.getElementById("box");
+                box.addEventListener("pointerout", function() {
+                    console.log("Mouse has left the box!");
+                });
+
+                document.addEventListener("pointerout", function() {
+                    console.log("Mouse has left the document!");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="box" style="width:200px; height:200px; background-color:lightblue; text-align:center; line-height:200px;">
+            Hover over me and then move out!
+        </div>
+    </body>
+</html>

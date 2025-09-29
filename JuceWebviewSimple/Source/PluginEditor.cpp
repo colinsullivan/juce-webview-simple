@@ -16,7 +16,7 @@ JuceWebviewSimpleAudioProcessorEditor::JuceWebviewSimpleAudioProcessorEditor (Ju
     
     addAndMakeVisible(mWebComponent);
     
-    mWebComponent.goToURL("https://google.com");
+    mWebComponent.goToURL("file:///Users/colin/projects/juce-webview-simple/document-mouseout-example.html");
     
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
